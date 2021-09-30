@@ -1,0 +1,413 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #060507;
+    color: #fff;
+    font-family: 'Dela Gothic One', cursive;
+    margin: 0;
+}
+/*HEADER Y FOOTER*/
+
+
+.header{
+    height: 80px;
+    border-bottom: 3px solid #20b2d6;
+}
+
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.87em;
+    line-height: 2.5em;
+}
+
+.logo:hover{
+    color:#fff;
+}
+
+.navigation__botonesVinculos{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding: 10px 15px;
+    line-height: normal;
+    transition: .5s;
+}
+.navigation__botonesVinculos:hover{
+    color: #f595a0;
+}
+
+.navigation__botonesVinculos::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+  
+.navigation__botonesVinculos:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+  
+.navigation__botonesVinculos::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgba(200,200,200,.1);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+
+.navigation__list{
+    list-style: none;
+}
+
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul .navigation__list{
+    display: inline-block;
+}
+
+
+/*HEADER Y FOOTER*/
+
+
+/*PAGINA PRINCIPAL*/
+.imagenPrincipal{
+    width: 100%;
+}
+
+/*PAGINA PRINCIPAL*/
+
+/*TITULO DE PAGINAS*/
+.title{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+}
+.titlePrincipal{
+    text-align: center;
+    font-size: 3em;
+    font-weight: normal;
+    letter-spacing: 10px;
+}
+/*TITULO DE PAGINAS*/
+/*ÍCONO DE WHATSAPP*/
+
+
+.iconWhatsapp{
+    position: fixed;
+    width: 60px;
+    line-height: 60px; 
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff; 
+    border-radius: 50%; 
+    text-align: center;
+    font-size: 1.87em;
+    box-shadow: rgb(255,255,255,.5) 0px 2px 10px;
+}
+
+.iconWhatsapp:hover{
+    background: #fff;
+    color: #0df053;
+    transition: .3s;
+}
+/* ÍCONO DE WHATSAPP */
+
+/*TOUR*/
+.formContact{
+    width: 100%;
+}
+.formInside{
+    background-image: url(../img/tour/harryconcert.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.inputText{
+    transition: all .5;
+}
+
+.inputText:focus{
+    transform: scale(1.5);
+    transition: .5s;
+    background-color: rgba(6,5,7,.5);
+    color: #f595a0;
+}
+
+.checkboxButton{
+    transform: scale(1.5);
+}
+
+.buttonEnd{
+    background: rgb(32,178,214);
+    background: linear-gradient(45deg, rgba(32,178,214,1) 23%, rgba(224,149,158,1) 76%);
+    border: 0px;
+    font-family: 'Dela Gothic One';
+    color: #ddd;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.gallery__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 350px;
+    padding: 30px;
+    grid-gap: 10px;
+}
+
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.gallery__item{
+    position: relative;
+    transition: .2s;
+}
+
+.gallery__item:hover{
+    transform: scale(1.04);
+    z-index: 30;
+}
+
+
+.gallery__title{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding-left: 15px;
+    width: 100%;
+    background:linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1))
+}
+
+.gallery__item:nth-child(1){
+    grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(3){
+    grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(5){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.gallery__item:nth-child(8){
+    grid-row-start: span 2;
+}
+.gallery__item:nth-child(9){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+
+/*TOUR*/
+
+
+/*404*/
+
+.error404{
+    display: table;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    text-align: center;
+}
+.oops{
+    font-size: 2rem;
+}
+.error404__mensajes{
+    display: table-cell;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,.6);
+    padding: 1.875rem 1.25rem;
+}
+.errorvinculo{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid #fff;
+    font-size: .9rem;
+}
+.errorvinculo:hover{
+    color: #fff;
+    background-color: #111;
+    transition: .7s;
+}
+
+/*404*/
+
+
+/*BIOGRAFIA*/
+
+.card-body{
+    background-color: #111;
+}
+
+
+.img-fluid{
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*BIOGRAFIA*/
+
+
+@media only screen and (max-width:976px){
+
+.title{
+    font-size: 1em;
+}
+
+.card-text{
+    font-size: .8em;
+}
+
+
+.header{
+    height: 110px;
+    transition: all 1s;
+
+}
+
+.logo-nav-container{
+    display: grid;
+    height: 200px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25%;
+    grid-template-areas: ". logo logo ."
+                         "botones botones botones botones";
+    justify-items: center;
+    margin: auto;
+}                         
+                         
+
+.logo{
+    grid-area: logo;
+    line-height: normal;
+    font-size: 1.1em;
+}
+
+.navigation{
+    grid-area: botones;
+}
+
+.navigation__botonesVinculos{
+    font-size:.8em;
+    padding: 10px;
+    
+}
+
+.imgFlexTour{
+    width: 10em;
+}
+
+
+.cajaFlex__producto{
+    width: 100px;
+    height: 100px;
+    background: rgb(50,50,50);
+}
+
+.cajaFlex__titulo{
+    font-size: .8em;
+}
+
+.gallery__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 350px;
+    padding: 30px;
+    grid-gap: 10px;
+}
+
+.gallery__item:nth-child(1){
+    grid-row-start: span 1;
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(2){
+    grid-row-start: span 1;
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(3){
+    grid-row-start: span 1;
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(4){
+    grid-row-start: span 1;
+    grid-column-start: span 1;
+}
+.gallery__item:nth-child(5){
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+}
+
+.gallery__item:nth-child(6){
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+}
+.gallery__item:nth-child(7){
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+}
+.gallery__item:nth-child(8){
+    grid-row-start: span 1;
+    grid-column-start: span 1;
+}
+.gallery__item:nth-child(9){
+    grid-row-start: span 1;
+    grid-column-start: span 1;
+}
+
+
+
+}
+
+@media only screen and (max-width:526px){
+
+.gallery__title{
+    display: none;
+}
+
+.navigation__botonesVinculos{
+    font-size: .9em;
+    padding: 5px;
+}
+
+.logo{
+    font-size:1.3em;
+}
+
+.logo-nav-container{
+    grid-template-areas: "logo logo logo logo"
+    "botones botones botones botones";
+}
+}

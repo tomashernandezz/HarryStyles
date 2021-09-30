@@ -1,0 +1,67 @@
+/*FOOTER*/
+.footer {
+  background-color: #1c1c1c;
+  margin: 0;
+  margin-top: 10px;
+  height: 100px; }
+  .footer__text {
+    margin: 0;
+    text-align: center; }
+  .footer__socialMedia {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0px; }
+
+.socialMedia__vinculos {
+  font-size: 1.7em;
+  color: white; }
+  .socialMedia__vinculos:hover {
+    cursor: pointer; }
+
+.twitter:hover {
+  color: #00acee; }
+
+.tumblr:hover {
+  color: #36465d; }
+
+.instagram:hover {
+  color: #c32aa3; }
+
+.facebook:hover {
+  color: #4267b2; }
+
+/*MERCH*/
+.cajaFlex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row; }
+  .cajaFlex__producto {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background: #323232; }
+  .cajaFlex__precio {
+    font-size: .9em;
+    color: #f595a0; }
+
+/*VIDEOS*/
+.videos__caja, .golden {
+  background-color: #1c1c1c;
+  margin: 15px 0px; }
+
+.videos__Titulo {
+  text-align: center;
+  font-size: 1.8em;
+  color: #fecf1b; }
+
+.videos__imagen {
+  width: 95%;
+  display: block;
+  margin: auto; }
+
+.golden {
+  background-color: #806c00; }
+
+.watermelon {
+  background-color: #ff476f;
+  margin: 15px 0px; }
