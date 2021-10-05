@@ -155,14 +155,18 @@ body{
 }
 
 .buttonEnd{
-    background: rgb(32,178,214);
-    background: linear-gradient(45deg, rgba(32,178,214,1) 23%, rgba(224,149,158,1) 76%);
-    border: 0px;
-    font-family: 'Dela Gothic One';
-    color: #ddd;
-    width: 300px;
-    height: 40px;
-    cursor: pointer;
+    color: #FE8CDF;
+    background: #353866;
+    border: 0 none;
+    border-radius: 36px;
+    line-height: 2em;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+
+.buttonEnd:hover{
+    background: #54577e;
+    transition: .2s;
 }
 
 .gallery__container{
