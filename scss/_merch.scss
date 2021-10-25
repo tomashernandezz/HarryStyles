@@ -1,0 +1,32 @@
+.cajaFlex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    &__producto{
+        width: 200px;
+    height: 200px;
+    border-radius: 20px; 
+    background: $fondomerch;
+    }
+    &__precio{
+        font-size: .9em;
+        color: $rosa
+    }
+}
+
+@media (max-width: 976px){
+    .imgFlexTour{
+        width: 10em;
+    }
+    
+    
+    .cajaFlex__producto{
+        width: 100px;
+        height: 100px;
+        background: rgb(50,50,50);
+    }
+    
+    .cajaFlex__titulo{
+        font-size: .8em;
+    }
+}

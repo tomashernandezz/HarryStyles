@@ -1,0 +1,39 @@
+.formContact{
+    width: 100%;
+}
+.formInside{
+    background-image: url(../img/tour/harryconcert.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.inputText{
+    transition: all .5;
+}
+
+.inputText:focus{
+    transition: .5s;
+    background-color: rgba(6,5,7,.5);
+    color: #f595a0;
+}
+
+.checkboxButton{
+    transform: scale(1.5);
+}
+
+.buttonEnd{
+    color:$rosa;
+    background: $boton;
+    border: 0 none;
+    border-radius: 36px;
+    line-height: 2em;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+
+.buttonEnd:hover{
+    background: $botonhover;
+    transition: .2s;
+}

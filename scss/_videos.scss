@@ -1,0 +1,30 @@
+.videos{
+    &__caja{
+        background-color: $gris;
+        padding-bottom: 10px;
+        margin: 15px 0px;
+    }
+    &__Titulo{
+        text-align: center;
+        font-size: 1.8em;
+        color: $amarillo;
+    }
+    &__imagen{
+        width: 95%;
+        display: block;
+        margin: auto;
+    }
+}
+
+.golden{
+    @extend .videos__caja;
+    background-color: darken($golden, 25%);
+}
+
+@mixin contenedorvideos ($background){
+    background-color: $background;
+    margin: 15px 0px;
+}
+.watermelon{
+    @include contenedorvideos(rgb(255, 71, 111))
+}

@@ -1,0 +1,30 @@
+.error404{
+    display: table;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    text-align: center;
+}
+.oops{
+    font-size: 2rem;
+}
+.error404__mensajes{
+    display: table-cell;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,.6);
+    padding: 1.875rem 1.25rem;
+}
+.errorvinculo{
+    color: $blanco;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid $blanco;
+    font-size: .9rem;
+}
+.errorvinculo:hover{
+    color: $blanco;
+    background-color: #111;
+    transition: .7s;
+}

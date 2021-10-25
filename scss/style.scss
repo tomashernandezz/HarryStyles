@@ -1,89 +1,12 @@
 @import "variables";
-/*FOOTER*/
-.footer{
-    background-color: $gris;
-    margin: 0;
-    margin-top: 10px;
-    height: 100px;
-    &__text{
-        margin: 0;
-        text-align: center;
-    }
-    &__socialMedia{
-        display: flex;
-        justify-content: space-evenly;
-        margin: 15px 0px;
-    }       
-}
-
-.socialMedia{
-    &__vinculos{
-        font-size: 1.7em;
-        color: $blanco;
-        &:hover{
-            cursor: pointer;
-        }
-    }
-}
-    .twitter:hover{
-        color:$twitter;
-    }
-    .tumblr:hover{
-        color: $tumblr;
-    }
-    .instagram:hover{
-        color:$instagram;
-    }
-    .facebook:hover{
-        color: $facebook;
-    }
-
-/*MERCH*/
-
-.cajaFlex{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    &__producto{
-        width: 200px;
-    height: 200px;
-    border-radius: 20px; 
-    background: $fondomerch;
-    }
-    &__precio{
-        font-size: .9em;
-        color: $rosa
-    }
-}
-
-/*VIDEOS*/
-.videos{
-    &__caja{
-        background-color: $gris;
-        padding-bottom: 10px;
-        margin: 15px 0px;
-    }
-    &__Titulo{
-        text-align: center;
-        font-size: 1.8em;
-        color: $amarillo;
-    }
-    &__imagen{
-        width: 95%;
-        display: block;
-        margin: auto;
-    }
-}
-
-.golden{
-    @extend .videos__caja;
-    background-color: darken($golden, 25%);
-}
-
-@mixin contenedorvideos ($background){
-    background-color: $background;
-    margin: 15px 0px;
-}
-.watermelon{
-    @include contenedorvideos(rgb(255, 71, 111))
-}
+@import "body";
+@import "header";
+@import "footer";
+@import "merch";
+@import "videos";
+@import "titulos";
+@import "whatsapp";
+@import "tourform";
+@import "404";
+@import "galeria";
+@import "cardbio";

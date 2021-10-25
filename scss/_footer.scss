@@ -1,0 +1,37 @@
+.footer{
+    background-color: $gris;
+    margin: 0;
+    margin-top: 10px;
+    height: 120px;
+    &__text{
+        margin: 0;
+        text-align: center;
+    }
+    &__socialMedia{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 15px 0px;
+    }       
+}
+
+.socialMedia{
+    &__vinculos{
+        font-size: 1.7em;
+        color: $blanco;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+    .twitter:hover{
+        color:$twitter;
+    }
+    .tumblr:hover{
+        color: $tumblr;
+    }
+    .instagram:hover{
+        color:$instagram;
+    }
+    .facebook:hover{
+        color: $facebook;
+    }
